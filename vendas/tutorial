@@ -1,0 +1,34 @@
+@SpringBootApplication		- diz qual classe é a classe que inicializa uma aplicação spring
+
+# - SpringApplication.run()	- inicialializa a aplicação
+
+@GetMapping("/hello")		- d
+
+
+
+@Configuration -> @Bean		- são configurações que são carregadas no começo da aplicação
+@Component -> @Controller
+		   -> @Service		- informa que essa classe faz açoes que podem ser externalizadas
+		   -> @Repository	- informa que essa classe faz contato com o DB
+		   
+@Autowired					- liga um metodi, parametro, etc a um @Bean nas configurações
+
+mapeamento JPA
+@Entity - para dizer que uma classe e referente a uma tabela
+@Table -  usado para assossiar o nome da tabela caso seja diferente do nome da classe
+
+@Id -  pra dizer que eh um primary key
+@GeneretadeValue - pra dizer que eu auto increment
+@Column - usado para assossiar o nome da coluna caso seja diferente do nome da coluna no bd
+
+@Transactional -  diz que o metodo eh uma transaçao do bd
+
+@Query -  indica que um método vai executar uma query sql ou hql
+@Modifying -  serve para metodos de delete e update da base
+
+@JoinColumn - referenciar foreign keys
+@ManyToOne - referenciar que é muitos pra um
+@OneToMany - referenciar que é um pra muitos
+
+@RequestMapping - value, method, consumes, produces
+@ResponseBody
